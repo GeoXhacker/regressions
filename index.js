@@ -1,26 +1,15 @@
-const regression = require("regression");
 var XLSX = require("xlsx");
 var fs = require("fs");
 const moment = require("moment");
-
-// const workbook = XLSX.read("Gulu.xlsx",{type:'binary',cellText:false,cellDates:true});
-// var file = fs.createWriteStream('array.txt');
-// file.on('error', function(err) { /* error handling */ });
-// arr.forEach(function(v) {
 
 var workbook = XLSX.readFile("Gulu.xlsx");
 console.log(workbook.SheetNames);
 
 const gulu = workbook.Sheets["Gulu"];
 
-// const result = regression.linear([[0, 1], [32, 67], [12, 79]]);
-
-// return console.log(result.string)
 const json = XLSX.utils.sheet_to_json(gulu, { raw: false });
 
-// return console.log(json)
 
-// var result = getFields(objArray, "foo"); // returns [ 1, 3, 5 ] 15623
 const a = [];
 const c = [];
 const d = [];
@@ -240,7 +229,7 @@ json.forEach((e, i) => {
 		} 
 	}
 });
-// const fs = require('fs')
+
 
 console.log("iterations done... now saving");
 
