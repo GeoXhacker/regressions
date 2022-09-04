@@ -1,0 +1,17 @@
+{
+  "name": "regressions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.3.0",
+    "moment": "^2.29.4",
+    "regression": "^2.0.1",
+    "xlsx": "^0.18.5"
+  }
+}
